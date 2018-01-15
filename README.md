@@ -12,6 +12,7 @@
 - [Communication](#communication)
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
 
 
 ## Features
@@ -56,3 +57,5 @@ advLabel.position = CGPoint(x:frame.width / 2.5, y:frame.height*0.70)
 advLabel.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
 ```
 
+## License
+SKAdvancedLabelNode is released under the MIT License.
