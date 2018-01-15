@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
 
-SKAdvancedLabelNode is an library written in Swift to improve the actual SpriteKit SKLabelNode. It contains an array of each single char of your label text re-builded as a SKLabelNode with one char to permit to animate or handling a specific char of your label.
+####SKAdvancedLabelNode is an library written in Swift to improve the actual SpriteKit SKLabelNode. It contains an array of each single char of your label text re-builded as a SKLabelNode with one char to permit to animate or handling a specific char of your label.
 
 - [Features](#features)
 - [ToDo](#todo)
@@ -14,13 +14,13 @@ SKAdvancedLabelNode is an library written in Swift to improve the actual SpriteK
 
 ## Features
 
-- [x] horizontalAlignmentMode  
-- [x] lineSpacingFactor (to adjust space between letters)
+- [x] ```horizontalAlignmentMode```  
+- [x] ```lineSpacingFactor``` (to adjust space between letters)
 - [x] sequentially bouncing zoom animation
 
 ## ToDo
 
-- [x] verticalAlignmentMode 
+- [x] ```verticalAlignmentMode``` 
 - [x] new animations
 
 ## Requirements
@@ -37,7 +37,7 @@ SKAdvancedLabelNode is an library written in Swift to improve the actual SpriteK
 
 ## Installation
 
-Add the source file SKAdvancedLabelNode.swift to your project and use it.
+Add the source file ```SKAdvancedLabelNode.swift``` to your project and use it.
 
 ## Usage
 
