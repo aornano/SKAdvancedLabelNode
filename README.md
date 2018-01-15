@@ -58,4 +58,4 @@ advLabel.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
 ```
 
 ## License
-SKAdvancedLabelNode is released under the MIT License.
+SKAdvancedLabelNode is released under the [MIT License](LICENSE)
