@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BadgeSwift.svg?style=flat)](http://cocoadocs.org/docsets/BadgeSwift)
 
-####SKAdvancedLabelNode is an library written in Swift to improve the actual SpriteKit SKLabelNode. It contains an array of each single char of your label text re-builded as a SKLabelNode with one char to permit to animate or handling a specific char of your label.
+**SKAdvancedLabelNode** is an library written in Swift to improve the actual SpriteKit SKLabelNode. It contains an array of each single char of your label text re-builded as a SKLabelNode with one char to permit to animate or handling a specific char of your label.
 
 - [Features](#features)
 - [ToDo](#todo)
