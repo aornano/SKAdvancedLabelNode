@@ -51,7 +51,7 @@ Add the source file ```SKAdvancedLabelNode.swift``` to your project and use it.
 // horizontal alignment : left
 var advLabel = SKAdvancedLabelNode(fontNamed:"Optima-ExtraBlack")
 advLabel.name = "advLabel"
-advLabel.text = labelTxt
+advLabel.text = "labelTxt"
 advLabel.fontSize = 20.0
 advLabel.fontColor = .green
 advLabel.horizontalAlignmentMode = .left
