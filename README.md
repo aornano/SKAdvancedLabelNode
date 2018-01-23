@@ -1,5 +1,6 @@
 ![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift]
 (https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif) 
+
 ![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift]
 (https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo2.gif) 
 
