@@ -22,11 +22,15 @@
 
 Creating a New Label Node:
 
-    ```- init(fontNamed: String?)
-      Initializes a new label object with a specified font.```
+```
+    - init(fontNamed: String?)
+      Initializes a new label object with a specified font.
+```
 
-    ```- init(text: String?)
-      Initializes a new label object with a text string.```
+```
+    - init(text: String?)
+      Initializes a new label object with a text string.
+```
 
 
 - [x] ```lineSpacingFactor``` (to adjust space between letters)
