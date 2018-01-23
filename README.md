@@ -1,4 +1,4 @@
-**SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift**
+##SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift
 
 ![sequentially bouncing zoom animation](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif=233×142) 
 
