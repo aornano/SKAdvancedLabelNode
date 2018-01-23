@@ -1,7 +1,6 @@
 ![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift]
-Sequentially bouncing zoom animation:
 (https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif) 
-Shake:
+![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift]
 (https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo2.gif) 
 
 [![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
