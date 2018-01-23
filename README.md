@@ -20,7 +20,8 @@
 
 ## Features
 
-Creating a New Label Node
+Creating a New Label Node:
+
     ```- init(fontNamed: String?)
       Initializes a new label object with a specified font.```
 
