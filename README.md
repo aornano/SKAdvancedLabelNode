@@ -43,6 +43,7 @@ Creating a New Label Node:
 
 ## ToDo
 - [x] new animations
+
 - [x] color blend factor like ```SKLabelNode```
 - [x] blend mode 
 - [x] ```init(attributedText: NSAttributedString?)```
