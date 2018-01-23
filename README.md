@@ -2,7 +2,7 @@
 
 ![sequentially bouncing zoom animation](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif=233×142) 
 
-![shake](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo2.gif=233×142) 
+![shake](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo2.gif | width=233 height=142) 
 
 [![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
