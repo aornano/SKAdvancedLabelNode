@@ -42,9 +42,10 @@ Creating a New Label Node:
 - [x] shake
 
 ## ToDo
-
-- [x] ```verticalAlignmentMode``` 
 - [x] new animations
+- [x] color blend factor like ```SKLabelNode```
+- [x] blend mode 
+- [x] ```init(attributedText: NSAttributedString?)```
 
 ## Requirements
 
