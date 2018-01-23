@@ -1,6 +1,8 @@
-![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif=233×142) 
+**SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift**
 
-![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo2.gif=233×142) 
+![sequentially bouncing zoom animation](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif=233×142) 
+
+![shake](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo2.gif=233×142) 
 
 [![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
@@ -37,6 +39,7 @@ Creating a New Label Node:
 
 - [x] ```lineSpacingFactor``` (to adjust space between letters)
 - [x] sequentially bouncing zoom animation
+- [x] shake
 
 ## ToDo
 
