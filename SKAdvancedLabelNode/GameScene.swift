@@ -63,7 +63,8 @@ class GameScene: SKScene {
         self.advLabel.horizontalAlignmentMode = .left
         self.addChild(self.advLabel)
         self.advLabel.position = CGPoint(x:frame.width / 2.5, y:frame.height*0.70)
-        self.advLabel.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
+        //self.advLabel.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
+        self.advLabel.shake(delay:1.0, infinite:true)
         
         // horizontal alignment : center
         self.advLabel2 = SKAdvancedLabelNode(fontNamed:"Optima-ExtraBlack")
@@ -74,7 +75,8 @@ class GameScene: SKScene {
         self.advLabel2.horizontalAlignmentMode = .center
         self.addChild(self.advLabel2)
         self.advLabel2.position = CGPoint(x:frame.width / 2.5, y:frame.height*0.50)
-        self.advLabel2.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
+        //self.advLabel2.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
+        self.advLabel2.shake(delay:1.0, infinite:true)
         
         // horizontal alignment : right
         self.advLabel3 = SKAdvancedLabelNode(fontNamed:"Optima-ExtraBlack")
@@ -85,7 +87,8 @@ class GameScene: SKScene {
         self.advLabel3.horizontalAlignmentMode = .right
         self.addChild(self.advLabel3)
         self.advLabel3.position = CGPoint(x:frame.width / 2.5, y:frame.height*0.30)
-        self.advLabel3.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
+        //self.advLabel3.sequentiallyBouncingZoom(delay: 0.3,infinite: true)
+        self.advLabel3.shake(delay:1.0, infinite:true)
         
         // Description to understand what happened to screen:
         let node1 = SKLabelNode(fontNamed:"Arial")

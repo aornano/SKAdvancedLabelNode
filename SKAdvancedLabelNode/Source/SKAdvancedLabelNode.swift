@@ -17,13 +17,13 @@ class SKAdvancedLabelNode: SKNode {
             refreshLabels()
         }
     }
-    var fontName = String() {
+    var fontName = "HelveticaNeue-UltraLight" {
         didSet {
             _ = labels.flatMap({ $0.fontName = fontName })
             refreshLabels()
         }
     }
-    var fontSize = CGFloat(10.0) {
+    var fontSize = CGFloat(30.0) {
         didSet {
             _ = labels.flatMap({ $0.fontSize = fontSize })
             refreshLabels()
@@ -55,12 +55,12 @@ class SKAdvancedLabelNode: SKNode {
     override init() {
         super.init()
     }
-    convenience init(with txt: String) {
+    convenience init(text: String) {
         self.init()
-        text = txt
+        self.text = text
     }
     convenience init(fontNamed fontName: String?) {
-        self.init(with: "")
+        self.init(text: "")
         if let f = fontName {
             self.fontName = f
         }
@@ -122,6 +122,29 @@ class SKAdvancedLabelNode: SKNode {
         }
     }
 }
+extension SKAction {
+    class func afterDelay(_ delay: TimeInterval, performAction action: SKAction) -> SKAction {
+        return SKAction.sequence([SKAction.wait(forDuration: delay), action])
+    }
+    class func afterDelay(_ delay: TimeInterval, runBlock block: @escaping () -> Void) -> SKAction {
+        return SKAction.afterDelay(delay, performAction: SKAction.run(block))
+    }
+}
+extension SKAction {
+    class func shake(duration:TimeInterval, amplitudeX:CGFloat = 3.0, amplitudeY:CGFloat = 3, speed : TimeInterval = 0.015) -> SKAction {
+        let numberOfShakes = duration / speed / 2.0
+        var actionsArray:[SKAction] = []
+        for _ in 1...Int(numberOfShakes) {
+            let dx = CGFloat(arc4random_uniform(UInt32(amplitudeX))) - CGFloat(amplitudeX / 2)
+            let dy = CGFloat(arc4random_uniform(UInt32(amplitudeY))) - CGFloat(amplitudeY / 2)
+            let forward = SKAction.moveBy(x: dx, y:dy, duration: speed)
+            let reverse = forward.reversed()
+            actionsArray.append(forward)
+            actionsArray.append(reverse)
+        }
+        return SKAction.sequence(actionsArray)
+    }
+}
 extension SKAdvancedLabelNode {
     // #-#-#-#-#-#-#-#-#-#-#-#-#-#-#
     //MARK: - Animations
@@ -145,6 +168,26 @@ extension SKAdvancedLabelNode {
             let seq = SKAction.sequence([main,waitAfter])
             let finalAction = infinite ? SKAction.repeatForever(seq) : main
             self.run(finalAction, withKey: "sequentiallyBouncingZoom")
+        }
+    }
+    
+    func shake(delay:TimeInterval, infinite:Bool = false, duration:TimeInterval = 5.0, amplitudeX:CGFloat = 10.0, amplitudeY:CGFloat = 10.0, speed:TimeInterval=0.25) {
+        if labels.count > 0 && self.action(forKey: "shake") == nil {
+            let originalPositions = self.labels.map({ return $0.position })
+            let main = SKAction.run { [weak self] in
+                guard let strongSelf = self else { return }
+                for i in 0..<strongSelf.labels.count {
+                    let currentLab = strongSelf.labels[i]
+                    let shake = SKAction.shake(duration: duration, amplitudeX: amplitudeX, amplitudeY: amplitudeY, speed: speed)
+                    let returnToPos = SKAction.move(to: originalPositions[i], duration: speed)
+                    let shakeAfter = SKAction.afterDelay(delay, performAction:SKAction.sequence([shake,returnToPos]))
+                    currentLab.run(shakeAfter, withKey: "shakeAfter\(i)")
+                }
+            }
+            let waitAfter = SKAction.wait(forDuration: delay * TimeInterval(self.labels.count+1))
+            let seq = SKAction.sequence([main,waitAfter])
+            let finalAction = infinite ? SKAction.repeatForever(seq) : main
+            self.run(finalAction, withKey: "shake")
         }
     }
 }
