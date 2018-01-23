@@ -1,10 +1,13 @@
 ![SKAdvancedLabelNode: SKLabelNode with single-handling-chars in Swift](https://github.com/aornano/SKAdvancedLabelNode/blob/master/demo.gif)
 
 [![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/BadgeSwift.svg?style=flat)](http://cocoadocs.org/docsets/BadgeSwift)
 
-####SKAdvancedLabelNode is an library written in Swift to improve the actual SpriteKit SKLabelNode. It contains an array of each single char of your label text re-builded as a SKLabelNode with one char to permit to animate or handling a specific char of your label.
+**SKAdvancedLabelNode** is an library written in Swift to improve the actual SpriteKit ```SKLabelNode``` class. It contains an array of each single char of your text re-builded as a ```SKLabelNode``` with one char to permit to animate or handling a single char of your label, few chars or all chars of text. This opens up the possibilities to create ```CGPath``` where your char comes for example from different points of screen using for example ```UIScreen.main.bounds.size``` as reference to adjust points..
 
 - [Features](#features)
 - [ToDo](#todo)
@@ -17,7 +20,19 @@
 
 ## Features
 
-- [x] ```horizontalAlignmentMode```  
+Creating a New Label Node:
+
+```
+    - init(fontNamed: String?)
+      Initializes a new label object with a specified font.
+```
+
+```
+    - init(text: String?)
+      Initializes a new label object with a text string.
+```
+
+
 - [x] ```lineSpacingFactor``` (to adjust space between letters)
 - [x] sequentially bouncing zoom animation
 
@@ -48,7 +63,7 @@ Add the source file ```SKAdvancedLabelNode.swift``` to your project and use it.
 // horizontal alignment : left
 var advLabel = SKAdvancedLabelNode(fontNamed:"Optima-ExtraBlack")
 advLabel.name = "advLabel"
-advLabel.text = labelTxt
+advLabel.text = "labelTxt"
 advLabel.fontSize = 20.0
 advLabel.fontColor = .green
 advLabel.horizontalAlignmentMode = .left
